@@ -67,11 +67,35 @@ CIRCUIT DIAGRAM
 
 
 ### PROGRAM :
- 
+ ```
+DEVELOPED BY: BALAUMESH S
+REGISTER NO:212221040024
 
+#include<Servo.h>
+Servo s1;
+void setup()
+{
+  s1.attach(9);
+}
+void loop()
+{
+  for(int i=0;i<=180;i++)
+  {
+s1.write(i);
+  delay(15);
+  }
+  for(int i=180;i>=0;i--)
+  {
+    s1.write(i);
+      delay(15);
+  }
+}
 
+```
 
+### OUTPUT:
 
+![Screenshot ex 05 1](https://user-images.githubusercontent.com/113031742/196436669-302e9d52-a430-46ae-a165-d655a6105acf.png)
 
 
 
